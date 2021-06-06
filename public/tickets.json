@@ -1,0 +1,22 @@
+[
+    {
+        "title":"First task on monday",
+        "currentVoting":{
+            "devId132r23":"13",
+            "devId1ag33h":"10",
+            "devId1a243h":"9",
+            "devId12443g":"?"
+        },
+        "finalVoting":""
+    },
+    {
+        "title":"Last task on friday",
+        "currentVoting":{
+            "devId132r23":"1",
+            "devId1ag33h":"0",
+            "devId1a243h":"1/2",
+            "devId12443g":"1"
+        },
+        "finalVoting":""
+    }
+]
