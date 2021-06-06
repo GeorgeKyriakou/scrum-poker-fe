@@ -1,5 +1,6 @@
 [
     {
+        "id": "sefgaejr31ewrflwrjgnaw",
         "title":"First task on monday",
         "currentVoting":{
             "devId132r23":"13",
@@ -7,9 +8,10 @@
             "devId1a243h":"9",
             "devId12443g":"?"
         },
-        "finalVoting":""
+        "finalVoting":"13"
     },
     {
+        "id": "aegrrigjaoerq312rtgehrg",
         "title":"Last task on friday",
         "currentVoting":{
             "devId132r23":"1",
@@ -17,6 +19,6 @@
             "devId1a243h":"1/2",
             "devId12443g":"1"
         },
-        "finalVoting":""
+        "finalVoting":"9"
     }
 ]

@@ -1,0 +1,30 @@
+.tickets-list-wrapper {
+    left: 50%;
+    width: 90%;
+    height: 100%;
+    padding-top: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    
+    .ticket-row {
+        height: 120px;
+        display: flex;
+        margin-bottom: 50px;
+        align-items: center;
+        border: 1px solid black;
+        position: relative;
+        .ticket-title {
+            width: 70%;
+            
+        }
+        .final-voting {
+            position: absolute;
+            font-size: small;
+            bottom: 5px;
+            right: 50px;
+        }
+    }
+
+}
+
+  

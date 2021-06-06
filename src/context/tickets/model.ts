@@ -6,6 +6,7 @@ export interface ITicketsState {
 }
 
 export interface ITicket {
+    id: string;
     title: string;
     currentVoting: CurrentDevVote;
     finalVoting: string;

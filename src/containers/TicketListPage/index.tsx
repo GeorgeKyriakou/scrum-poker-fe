@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react'
+import './ticketListPage.scss'
 import TicketsContext from '../../context/tickets/context'
+import VotingWheel from '../../components/VotingWheel';
 
 const TicketListPage: React.FC = () => {
     const { loading, error, tickets, fetchTickets } = useContext(TicketsContext);
@@ -7,6 +9,11 @@ const TicketListPage: React.FC = () => {
     useEffect(() => {
         fetchTickets();
     }, [])
+
+    const castVote = (ticketId:string, vote:string) => {
+        console.log({ticketId, vote});
+    }
+
 
     if (loading) {
         return <div>Loading...</div>
@@ -18,11 +25,15 @@ const TicketListPage: React.FC = () => {
     }
 
     return (<>
+    <div className="tickets-list-wrapper">
         {tickets.length && tickets.map((ticket, i) => {
-            return <div key={i}>
-                {ticket.title}
+            return <div key={i} className="ticket-row">
+               <div className="ticket-title"> {ticket.title}</div>
+                <VotingWheel ticketId={ticket.id} castVote={castVote} />
+               <div className="final-voting">Final: {ticket.finalVoting}</div>
             </div>
         })}
+        </div>
     </>)
 }
 
